@@ -20,5 +20,3 @@ sed -i 's/OpenWrt/HanHanWrt/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #Modify default firewall
 sed -i 's/option forward		REJECT/option forward		ACCEPT/g' package/network/config/firewall/files/firewall.config
-#Enable cpufreq
-sed -i 's/@arm/ /g' package/lean/luci-app-cpufreq/Makefile
