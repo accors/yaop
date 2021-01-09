@@ -21,7 +21,7 @@ git clone https://github.com/XiaYi1002/luci-app-e-wool
 git clone https://github.com/lisaac/luci-app-dockerman
 cd
 #Overclock RK3328 to 1608MHz
-wget -P /target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/QiuSimons/R2S-OpenWrt/master/PATCH/new/main/999-unlock-1608mhz-rk3328.patch
+wget -P openwrt/target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/QiuSimons/R2S-OpenWrt/master/PATCH/new/main/999-unlock-1608mhz-rk3328.patch
 #Crypto
 echo '
 CONFIG_ARM64_CRYPTO=y
@@ -46,4 +46,4 @@ CONFIG_CRYPTO_SHA512_ARM64=y
 CONFIG_CRYPTO_SIMD=y
 # CONFIG_CRYPTO_SM3_ARM64_CE is not set
 # CONFIG_CRYPTO_SM4_ARM64_CE is not set
-' >> target/linux/rockchip/armv8/config-5.4
+' >> openwrt/target/linux/rockchip/armv8/config-5.4
