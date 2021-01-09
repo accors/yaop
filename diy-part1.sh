@@ -22,3 +22,5 @@ git clone https://github.com/lisaac/luci-app-dockerman
 cd
 #Overclock RK3328 to 1608MHz
 wget -P openwrt/target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/QiuSimons/R2S-OpenWrt/master/PATCH/new/main/999-unlock-1608mhz-rk3328.patch
+#Enable cpufreq
+sed -i 's/@arm/ /g' package/lean/luci-app-cpufreq/Makefile
