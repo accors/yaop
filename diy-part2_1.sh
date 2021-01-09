@@ -18,3 +18,5 @@ sed -i 's/R20.12.12/R21.1.5 Compiled by accors for HanHan/g' package/lean/defaul
 sed -i 's/OpenWrt/HanHanWrt/g' package/base-files/files/bin/config_generate
 #Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#Modify default firewall
+sed -i 's/option forward		REJECT/option forward		ACCEPT/g' package/network/config/firewall/files/firewall.config
