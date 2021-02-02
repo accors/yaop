@@ -19,6 +19,7 @@
 cd package/lean
 git clone https://github.com/XiaYi1002/luci-app-e-wool
 git clone https://github.com/lisaac/luci-app-dockerman
+git clone https://github.com/garypang13/luci-app-bypass
 cd
 #Overclock RK3328 to 1608MHz
 wget -P https://raw.githubusercontent.com/QiuSimons/R2S-R4S-X86-OpenWrt/master/PATCH/new/main/999-unlock-1608mhz-rk3328.patch
