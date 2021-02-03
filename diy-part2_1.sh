@@ -21,5 +21,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 #Modify default firewall
 sed -i 's/option forward		REJECT/option forward		ACCEPT/g' package/network/config/firewall/files/firewall.config
 #Modify Makefile
-sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' package/*/*/Makefile
-sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' package/*/*/Makefile
+sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' package/feeds/helloworld/luci-app-ssr-plus/Makefile
+sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' package/feeds/passwall/luci-app-passwall/Makefile
+sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' package/feeds/helloworld/luci-app-ssr-plus/Makefile
+sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' package/feeds/passwall/luci-app-passwall/Makefile
