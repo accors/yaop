@@ -16,11 +16,11 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # Modify packages
-sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' /openwrt/package/*/*/Makefile
-sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' /openwrt/package/*/*/Makefile
+sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' openwrt/package/*/*/Makefile
+sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' openwrt/package/*/*/Makefile
 #Add useful softwares
 cd package/lean
-git clone https://github.com/XiaYi1002/luci-app-e-wool
+git clone https://github.com/XiaYi1002/luci-app-b-wool
 git clone https://github.com/lisaac/luci-app-dockerman
 git clone https://github.com/garypang13/luci-app-bypass
 cd
