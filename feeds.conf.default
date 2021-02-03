@@ -15,4 +15,3 @@ src-git mypackages https://github.com/siropboy/mypackages
 #src-git jerryk https://github.com/jerrykuku/openwrt-package
 src-git destan https://github.com/destan19/OpenAppFilter
 src-git passwall https://github.com/xiaorouji/openwrt-passwall
-src-git ssr https://github.com/shadowsocks/openwrt-feeds.git
