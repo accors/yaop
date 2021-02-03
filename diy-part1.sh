@@ -24,7 +24,6 @@ git clone https://github.com/XiaYi1002/luci-app-e-wool
 git clone https://github.com/lisaac/luci-app-dockerman
 git clone https://github.com/garypang13/luci-app-bypass
 cd
-cd package
 git clone https://github.com/kenzok8/small
 cd
 #Overclock RK3328 to 1608MHz
