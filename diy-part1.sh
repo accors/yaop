@@ -22,8 +22,7 @@ cd package/lean
 git clone https://github.com/XiaYi1002/luci-app-b-wool
 git clone https://github.com/lisaac/luci-app-dockerman
 git clone https://github.com/garypang13/luci-app-bypass
-cd
-git clone https://github.com/kenzok8/small
+git clone https://github.com/jerrykuku/lua-maxminddb.git
 cd
 #Overclock RK3328 to 1608MHz
 cd target/linux/rockchip/patches-5.4 
