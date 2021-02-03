@@ -27,4 +27,6 @@ cd
 git clone https://github.com/kenzok8/small
 cd
 #Overclock RK3328 to 1608MHz
-wget -P openwrt/target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/QiuSimons/R2S-R4S-X86-OpenWrt/master/PATCH/new/main/999-unlock-1608mhz-rk3328.patch
+cd target/linux/rockchip/patches-5.4 
+wget https://raw.githubusercontent.com/QiuSimons/R2S-R4S-X86-OpenWrt/master/PATCH/new/main/999-unlock-1608mhz-rk3328.patch
+cd
