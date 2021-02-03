@@ -18,6 +18,7 @@
 # Modify packages
 sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' package/*/*/Makefile
 sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' package/*/*/Makefile
+git clone https://github.com/chenhw2/openwrt-shadowsocksr.git package/feeds/shadowsocksr-libev
 #Add useful softwares
 cd package/lean
 git clone https://github.com/XiaYi1002/luci-app-b-wool
