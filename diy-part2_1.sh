@@ -20,8 +20,6 @@ sed -i 's/OpenWrt/HanHanWrt/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #Modify default firewall
 sed -i 's/option forward		REJECT/option forward		ACCEPT/g' package/network/config/firewall/files/firewall.config
-#Modify Makefile
-sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' package/feeds/helloworld/luci-app-ssr-plus/Makefile
-sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' package/feeds/passwall/luci-app-passwall/Makefile
-sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' package/feeds/helloworld/luci-app-ssr-plus/Makefile
-sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' package/feeds/passwall/luci-app-passwall/Makefile
+#Modify Makefile for Bypass
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
